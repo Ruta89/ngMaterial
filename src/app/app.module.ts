@@ -16,6 +16,7 @@ import { MyDialogComponent } from './my-dialog/my-dialog.component';
 import { DialogDemoComponent } from './dialog-demo/dialog-demo.component';
 import { TooltipDemoComponent } from './tooltip-demo/tooltip-demo.component';
 import { SnackbarDemoComponent } from './snackbar-demo/snackbar-demo.component';
+import { UsertableComponent } from './components/usertable/usertable.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SnackbarDemoComponent } from './snackbar-demo/snackbar-demo.component';
     MyDialogComponent,
     DialogDemoComponent,
     TooltipDemoComponent,
-    SnackbarDemoComponent
+    SnackbarDemoComponent,
+    UsertableComponent
   ],
   imports: [
     BrowserModule,
