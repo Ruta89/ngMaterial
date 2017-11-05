@@ -6,11 +6,13 @@ import { MyFormComponent } from './my-form/my-form.component';
 import { MatInputModule, MatButtonModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { MenudemoComponent } from './menudemo/menudemo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyFormComponent
+    MyFormComponent,
+    MenudemoComponent
   ],
   imports: [
     BrowserModule,
