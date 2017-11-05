@@ -4,19 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MyFormComponent } from './my-form/my-form.component';
 import { MatInputModule, MatButtonModule, MatIconModule, MatMenuModule, MatCardModule,
-  MatSidenavModule
+  MatSidenavModule, MatToolbarModule
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { MenudemoComponent } from './menudemo/menudemo.component';
 import { SidenavdemoComponent } from './sidenavdemo/sidenavdemo.component';
+import { ToolbardemoComponent } from './toolbardemo/toolbardemo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyFormComponent,
     MenudemoComponent,
-    SidenavdemoComponent
+    SidenavdemoComponent,
+    ToolbardemoComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,7 @@ import { SidenavdemoComponent } from './sidenavdemo/sidenavdemo.component';
     MatMenuModule,
     MatCardModule,
     MatSidenavModule,
+    MatToolbarModule,
     FormsModule
   ],
   providers: [],
