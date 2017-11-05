@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MyFormComponent } from './my-form/my-form.component';
-import { MatInputModule, MatButtonModule } from '@angular/material';
+import { MatInputModule, MatButtonModule, MatIconModule, MatMenuModule, MatCardModule} from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { MenudemoComponent } from './menudemo/menudemo.component';
@@ -19,6 +19,9 @@ import { MenudemoComponent } from './menudemo/menudemo.component';
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
+    MatIconModule,
+    MatMenuModule,
+    MatCardModule,
     FormsModule
   ],
   providers: [],
