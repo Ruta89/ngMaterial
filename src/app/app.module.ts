@@ -1,11 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { MyFormComponent } from './my-form/my-form.component';
-import { MatInputModule, MatButtonModule, MatIconModule, MatMenuModule, MatCardModule,
-  MatSidenavModule, MatToolbarModule, MatDialogModule,
-  MatTooltipModule, MatSnackBarModule
+import {
+  MatInputModule,
+  MatButtonModule,
+  MatIconModule,
+  MatMenuModule,
+  MatCardModule,
+  MatSidenavModule,
+  MatToolbarModule,
+  MatDialogModule,
+  MatTooltipModule,
+  MatSnackBarModule,
+  MatTableModule
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
@@ -17,7 +26,7 @@ import { DialogDemoComponent } from './dialog-demo/dialog-demo.component';
 import { TooltipDemoComponent } from './tooltip-demo/tooltip-demo.component';
 import { SnackbarDemoComponent } from './snackbar-demo/snackbar-demo.component';
 import { UsertableComponent } from './components/usertable/usertable.component';
-
+import { UserService } from './services/user.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,9 +53,11 @@ import { UsertableComponent } from './components/usertable/usertable.component';
     MatDialogModule,
     MatTooltipModule,
     MatSnackBarModule,
-    FormsModule
+    MatTableModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
