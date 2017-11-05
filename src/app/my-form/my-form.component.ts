@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Address } from '../address';
 
 @Component({
   selector: 'app-my-form',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-form.component.css']
 })
 export class MyFormComponent implements OnInit {
+  address = new Address();
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  onSubmit() {
+    alert(' Data: ' + JSON.stringify(this.address));
   }
-
 }
