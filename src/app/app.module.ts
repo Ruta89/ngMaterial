@@ -57,6 +57,9 @@ import { UserService } from './services/user.service';
     FormsModule,
     HttpClientModule
   ],
+  entryComponents: [
+    MyDialogComponent,
+  ],
   providers: [UserService],
   bootstrap: [AppComponent]
 })
